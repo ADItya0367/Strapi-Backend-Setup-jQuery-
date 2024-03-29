@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <title>Bootstrap-Project-Third</title>
+    <script src="<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <style>
+      .body {
+        background-color: #c4bcb3;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+      }
+    
+      header {
+        background-color: #c4bcb3;
+        height: 80px;
+      }
+      .logo {
+        color: #c4bcb3;
+
+        font-size: 25px;
+      }
+      .a_main {
+        background-color: #f9f3e6;
+        height: 600px;
+        margin: 0%;
+      }
+      .a_cont {
+        padding: 90px;
+      }
+      img {
+        margin-top: 80px;
+        margin-left: 30px;
+      }
+      .start {
+        padding: 0%;
+      }
+      .padd {
+        padding: 20px;
+        margin-left: 180px;
+      }
+      .paddd {
+        margin-left: 100px;
+        margin-top: 20px;
+      }
+      .pad {
+        padding-right: 60px;
+      }
+      .lin {
+        background-color: #007ebb;
+      }
+      .git {
+        background-color: #0d1017;
+      }
+      .dark {
+        margin-left: 440px;
+      }
+      .light {
+        margin-right: 420px;
+      }
+      .line {
+        background-color: black;
+      }
+      .coll {
+        background-color: #c4bcb3;
+      }
+      .p {
+        margin-left: 180px;
+      }
+      .b1 {
+        margin-right: -10px;
+      }
+      .b2 {
+        margin-left: 20px;
+      }
+      .but {
+        background-color: #a4aab2;
+      }
+      .log {
+        margin-bottom: 180px;
+      }
+      .butt {
+        margin-bottom: 520px;
+        margin-left: 20px;
+        color: black;
+      }
+      .banner {
+        margin-right: 100px;
+      }
+      .acc {
+        padding-top: 180px;
+      }
+      .jumb {
+        padding-bottom: 480px;
+      }
+      .change{
+        padding-left: 200px;
+        gap: 40px;
+      }
+      .a_col{
+        background-color: #c4bcb3;
+      }
+      .imgh{
+        width: auto;
+        height: 360px;
+        margin-left: -100px;
+        margin-bottom: 50px;
+      }
+      .ser{
+        background-color: #f9f3e6;
+        border : 1px solid black;
+      }
+      .buddha{
+        height: 360px;
+       
+      }
+      .data{
+       padding-top: 20px;
+      }
+      .datas{
+        background-color: #f9f3e6;
+      }
+  
+
+.wave {
+  display: block;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  background: #c4bcb3;
+  transform: scale(1, 1);
+  z-index: -1;
+}
+
+.slider {
+    background: #c4bcb3;
+    height: 75pt;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    cursor: default;
+    user-select: none;
+    touch-action: none;
+}
+
+.slider:before {
+    left: 0;
+    top: 0;
+}
+.slider:after,
+.slider:before {
+    background: linear-gradient(
+        to right,
+        #efeef2 0%,
+        hsla(0, 0%, 100%, 0) 100%
+    );
+    content: "";
+    height: 75pt;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+.slider:after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+.slider:after,
+.slider:before {
+    background: linear-gradient(
+        to right,
+        #efeef2 0%,
+        hsla(0, 0%, 100%, 0) 100%
+    );
+    content: "";
+    height: 75pt;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+
+.slider .slide-track-1 {
+    animation: scroll-l 30s linear infinite;
+    display: flex;
+    width: 3500px;
+}
+.slider .slide-track-2 {
+    animation: scroll-r 30s linear infinite;
+    display: flex;
+    width: 3500px;
+}
+body{
+    margin-top:20px;
+    color: #bcd0f7;
+    background: #1A233A;
+}
+.timeline {
+    position: relative;
+    background: #272e48;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 5rem;
+    margin: 0 auto 1rem auto;
+    overflow: hidden;
+}
+.timeline:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -2px;
+    border-right: 2px dashed #4b546f;
+    height: 100%;
+    display: block;
+}
+
+.timeline-row {
+    padding-left: 50%;
+    position: relative;
+    margin-bottom: 30px;
+}
+.timeline-row .timeline-time {
+    position: absolute;
+    right: 50%;
+    top: 15px;
+    text-align: right;
+    margin-right: 20px;
+    color: black;
+    font-size: 1.5rem;
+}
+.timeline-row .timeline-time small {
+    display: block;
+    font-size: 0.8rem;
+}
+.timeline-row .timeline-content {
+    position: relative;
+    padding: 20px 30px;
+    background: #1a233a;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.timeline-row .timeline-content:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    height: 16px;
+    width: 16px;
+    background: #1a233a;
+}
+.timeline-row .timeline-content:before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -49px;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    z-index: 10;
+    background: #272e48;
+    border: 2px dashed #4b546f;
+}
+.timeline-row .timeline-content h4 {
+    margin: 0 0 20px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 150%;
+}
+.timeline-row .timeline-content p {
+    margin-bottom: 30px;
+    line-height: 150%;
+}
+.timeline-row .timeline-content i {
+    font-size: 1.2rem;
+    line-height: 100%;
+    padding: 15px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    background: #272e48;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.timeline-row .timeline-content .thumbs {
+    margin-bottom: 20px;
+    display: flex;
+}
+.timeline-row .timeline-content .thumbs img {
+    margin: 5px;
+    max-width: 60px;
+}
+.timeline-row .timeline-content .badge {
+    color: #da0b0b;
+    background: linear-gradient(120deg, #00b5fd 0%, #0047b1 100%);
+}
+.timeline-row:nth-child(even) .timeline-content {
+    margin-left: 40px;
+    text-align: left;
+}
+.timeline-row:nth-child(even) .timeline-content:after {
+    left: -8px;
+    right: initial;
+    border-bottom: 0;
+    border-left: 0;
+    transform: rotate(-135deg);
+}
+.timeline-row:nth-child(even) .timeline-content:before {
+    left: -52px;
+    right: initial;
+}
+.timeline-row:nth-child(odd) {
+    padding-left: 0;
+    padding-right: 50%;
+}
+.timeline-row:nth-child(odd) .timeline-time {
+    right: auto;
+    left: 50%;
+    text-align: left;
+    margin-right: 0;
+    margin-left: 20px;
+}
+.timeline-row:nth-child(odd) .timeline-content {
+    margin-right: 40px;
+}
+.timeline-row:nth-child(odd) .timeline-content:after {
+    right: -8px;
+    border-left: 0;
+    border-bottom: 0;
+    transform: rotate(45deg);
+}
+
+@media (max-width: 992px) {
+    .timeline {
+        padding: 15px;
+    }
+    .timeline:after {
+        border: 0;
+    }
+    .timeline .timeline-row:nth-child(odd) {
+        padding: 0;
+    }
+    .timeline .timeline-row:nth-child(odd) .timeline-time {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 0 10px 0;
+    }
+    .timeline .timeline-row:nth-child(odd) .timeline-content {
+        margin: 0;
+    }
+    .timeline .timeline-row:nth-child(odd) .timeline-content:before {
+        display: none;
+    }
+    .timeline .timeline-row:nth-child(odd) .timeline-content:after {
+        display: none;
+    }
+    .timeline .timeline-row:nth-child(even) {
+        padding: 0;
+    }
+    .timeline .timeline-row:nth-child(even) .timeline-time {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 0 10px 0;
+        text-align: left;
+    }
+    .timeline .timeline-row:nth-child(even) .timeline-content {
+        margin: 0;
+    }
+    .timeline .timeline-row:nth-child(even) .timeline-content:before {
+        display: none;
+    }
+    .timeline .timeline-row:nth-child(even) .timeline-content:after {
+        display: none;
+    }
+}
+.halo{
+    padding-top: 200px;
+}
+.slider .slide {
+    height: 70pt;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.slider .slide img {
+    width: 60px;
+    padding: 1pc;
+    vertical-align: middle;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes scroll-l {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+@keyframes scroll-r {
+    100% {
+        transform: translateX(0);
+    }
+    0% {
+        transform: translateX(calc(-250px * 7));
+    }
+}
+.timeline{
+  background-color: #c4bcb3;
+}
+
+ .mail.texta{
+    padding-right: 60px;
+ }
+ .heads{
+  color: #c4bcb3;
+  padding-top: -5;
+
+ }
+ .intro{
+  color: #c4bcb3;
+ 
+ .logos{
+  height: 40px;
+  width: 40px;
+ 
+ }
+ .optin{
+  background-color: #c4bcb3;
+  
+ 
+ }
+ .bara{
+  height: 100px;
+  width: 100px;
+ }
+ }
+ .duc{
+  background-color: #c4bcb3;
+  
+  ;
+ }
+ .pages{
+  background-color: #c4bcb3;
+  
+ 
+ }
+
+.bod{
+    box-shadow: 10px 10px 5px #888888;
+}
+.datas{
+    color:#9e9387;
+
+}
+.size{
+    height: 40px;
+}
+      footer {
+        background-color: #211617;
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body class="p-0"  bgcolor="#fdc238">
+    <div class="container-fluid a_con p-0">
+      <header class="p-0 bg-dark ">
+        <div class="h_part">
+          <nav class="navbar navbar-expand-lg a_col">
+            <div class="container-fluid">
+              <a class="navbar-brand ms-5 text-dark mt-1" href="#">
+              Strapi
+              </a>
+              <button
+                class="navbar-toggler bg-dark mt-4"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse mt-3" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto change ms-5 mb-5 pb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active text-dark"
+                      aria-current="page"
+                      href="#"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" href="#">about</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle text-dark"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Languages
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item text-dark" href="#"
+                          >Contact
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item text-dark" href="#">Github</a>
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item text-white" href="#">Review</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark" aria-disabled="true"
+                      >Social</a
+                    >
+                  </li>
+                </ul>
+                <form class="d-flex mb-2 " role="search">
+                  <input
+                    class="form-control me-2 text-dark ser "
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button
+                    class="btn btn-outline-success ser text-dark "
+                    type="submit"
+                  >
+                    Search
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="a_main body row mt-">
+        <div class="col-8 a_cont text-center text-dark">
+          <h1 class="mb-2 mt-3">
+            Strapi , Backend Setup Using jQuery, Bootstrap, and Node.js
+          </h1>
+          <p class="mt-3">
+            In This Article/Webpage we will see how we can Store all data recieved by the user in the backend using Strapi and Node.js.
+            How we can use the concept of API and JSON to store the data in the backend(strapi).
+          </p>
+          <button class="btn btn-dark mt-2">Source Code</button>
+        </div>
+        <div class="col-4 m-0 a_main">
+            <img class="imgh  "  src="./35cb4024aca4bfdf92e00c885e017702.gif" />
+          </div>
+      </div>
+      <div class="wave">
+        <div class="slider ">
+            <div class="slide-track-1 ">
+                <div class="slide">
+                    <img class="size" src="./community.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="size" src="./github.png" alt="">
+                </div>
+        
+                <div class="slide">
+                    <img class="size" src="./leetcode.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="size" src="./linkedin.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="size" src="./html.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="size" src="./jquery.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="size" src="./javascript.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+      <div class="container-fluid body datas p-0 m-0 mt-5 coll row">
+        <div class="col-5">
+            <img class="buddha" src="./2-removebg-preview.png">
+        </div>
+        <div class="col-7 datas text-center mt-5">
+            <h1>Create an Account</h1>
+            <h4>Let's Get Started</h4>
+            <div class="mb-2  me-5 data bod">
+                <label for="exampleFormControlInput1 " class="form-label mail ">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+             
+              <div class="mb-5 me-5 mt-4 bod">
+                <label for="exampleFormControlTextarea1 " class="form-label texta ">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+        </div>
+      </div>
+
+      <div class="container row">
+        <div class="col-4 padd"></div>
+      </div>
+
+      <h1 class="text-center mb-4  heads">Let's Get Started with Strapi </h1>
+
+
+
+     <div class="timeline ">
+      <div class="container">
+        <div class="timeline">
+            <div class="timeline-row  intro">
+              <div class="timeline-time ">
+                Introduction<small>Phase-1</small>
+              </div>
+              <div class="timeline-content">
+                <img class="me-4" src="./Strapi.png">
+                <h4>About Strap!</h4>
+                <p>Strapi is a Nodejs-based open-source headless content management system (CMS). </p>
+                <div class="thumbs">
+                  <img class="img-fluid rounded" src="./1.png" alt="Maxwell Admin">
+                  <img class="img-fluid rounded" src="./2.png" alt="Maxwell Admin">
+                  <img class="img-fluid rounded" src="./3.png" alt="Maxwell Admin">
+                </div>
+                <div class=" bg-dark">
+                  <button class="btn duc">Introduction</button>
+                </div>
+              </div>
+            </div>
+        
+            <div class="timeline-row intro">
+              <div class="timeline-time">
+                Terminologies<small>Phase 2</small>
+              </div>
+              <div class="timeline-content">
+                <img class="logos me-2"   src="./Modern Brain Technology Logo.png">
+                <h4>Some Terminologies</h4>
+                <p>
+                  Know About Collections, User Roles , Settings and Much More Related to Swagger Documentation !
+                </p>
+                <div class="thumbs">
+                  <div class="thumbs">
+                  <img class="img-fluid rounded" src="./1.png" alt="Maxwell Admin">
+                  <img class="img-fluid rounded" src="./2.png" alt="Maxwell Admin">
+                  <img class="img-fluid rounded" src="./3.png" alt="Maxwell Admin">
+                </div>
+                </div>
+                <div class="">
+                  <button class="btn duc">Terminologies</button>
+                </div>
+              </div>
+            </div>
+        
+            <div class="timeline-row intro">
+              <div class="timeline-time">
+                Installation Guide<small>Phase 3</small>
+              </div>
+              <div class="timeline-content">
+                <img class="logos me-2"   src="./2.png">
+                <h4>Install Strap!</h4>
+                <p>Strapi projects can be installed either locally on a computer or on a remote server.</p>
+                <div>
+                  <button class="btn duc">Guide Me Bro</button>
+                </div>
+              </div>
+            </div>
+        
+          
+             
+          
+            <div class="timeline-row">
+              <div class="timeline-content">
+                <p class="m-0 intro">Continue to Github...</p>
+              </div>
+            </div>
+        
+          </div>
+        </div>
+     </div>
+
+
+
+
+
+      
+        <select
+          class="form-select text-black pages "
+          aria-label="Default select example"
+        >
+          <option selected>Do You like the page?</option>
+          <option value="1">Yes</option>
+          <option value="2">No</option>
+          <option value="3">Of course</option>
+        </select>
+
+        <div class="accordion mt-5 p-4 acc" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header mb-2">
+              <button
+                class="accordion-button pages"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                What is Bootstrap ?
+              </button>
+            </h2>
+
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show "
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>
+                 Bootstrap is a free, open source front-end development framework for the creation of websites and web apps. Designed to enable responsive development of mobile-first websites, Bootstrap provides a collection of syntax for template designs.
+               , though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header mb-2">
+              <button
+                class="accordion-button collapsed pages"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                What are the best thing about Bootstrap ?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse "
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>Bootstrap is a great way to learn responsive design, even if you only use it as a stepping stone before moving on to develop your own style 
+               , though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed pages"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+               Is their any future scope for that ?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>Yes having Bootstrap included with your Frontend Skills will definately increase the chance of 
+                  being selected !
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container bann">
+          <img
+            src="./Beige and Black Creative Playful Hiring Instagram Post.png"
+            class="img-fluid log bara "
+            alt="..."
+          />
+          <div class="text-center">
+            <button class="btn btn-dark bg-white b1 butt">Contact Now</button>
+            <button class="btn btn-dark  bg-white b1 butt">Profiles/Project</button>
+          </div>
+          <div class="jumbotron jumb text-center ">
+            <h1 class="display-4 text-center text-white halo">See You There !</h1>
+            <p class="lead text-center text-white">
+             Lets contribute to the Open Source Community !
+            </p>
+            <hr class="my-2 text-center bg-dark" />
+            <p class="text-center text-white mt-5">
+             Make sure to submit a pull Request and le me know if i can help you.
+            </p>
+            <a
+              class="btn btn-primary text-center  bg-dark text-white"
+              href="#"
+              role="button"
+              >Linkedin</a
+            >
+            <button
+              type="button"
+              class="btn btn-secondary bg-dark"
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Tooltip on top"
+            >
+              Github
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary bg-dark"
+              data-toggle="tooltip"
+              data-placement="right"
+              title="Tooltip on right"
+            >
+              Website
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary bg-dark
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title="Tooltip on bottom"
+            >
+              Whatsapp
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary bg-dark"
+              data-toggle="tooltip"
+              data-placement="left"
+              title="Tooltip on left"
+            >
+              Twitter
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card text-center  ">
+      <div class="card-header body text-white bg-dark">Featured</div>
+      <div class="card-body body bg-dark">
+        <h5 class="card-title text-white">Wanted to Connect ?</h5>
+        <p class="card-text text-white bg-dark">
+          Lets Collaborate for an open Source Project ?
+        </p>
+        <a href="#" class="btn btn-primary mb-2 body bg-dark">Github</a>
+      </div>
+      <div class="card-footer text-white body bg-dark">Aditya Mishra</div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
